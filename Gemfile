@@ -42,7 +42,7 @@ gem "webrick", "~> 1.7"
 # Reduces boot times through caching; required in config/boot.rb
 gem 'bootsnap', '>= 1.10.3', require: false
 
-
+gem 'bundler'
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
@@ -59,7 +59,7 @@ group :development, :test do
   gem 'rails_admin', '~> 2.0'
   # Use sqlite3 as the database for Active Record
   gem 'sqlite3', '~> 1.4.2'
-  gem 'bundler'
+  
 end
 
 group :development do
