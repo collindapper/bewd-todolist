@@ -42,7 +42,7 @@ gem "webrick", "~> 1.7"
 # Reduces boot times through caching; required in config/boot.rb
 gem 'bootsnap', '>= 1.10.3', require: false
 
-gem 'bundler'
+
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
@@ -75,4 +75,5 @@ end
 group :production do
   # Use pg as the database for Active Record
   gem 'pg', '~> 1.3.1'
+  gem 'bundler'
 end
