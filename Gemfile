@@ -74,5 +74,4 @@ group :production do
   # Use pg as the database for Active Record
   # gem 'pg', '~> 1.3.1'
   gem 'pg', '~> 1.2.3'
-  gem 'bundler', '~> 2.2.3'
 end
