@@ -55,6 +55,8 @@ group :development, :test do
   # Added by Collin (Forked)
   gem 'net-smtp', '>= 0.3.1'
   gem 'rails_admin', '~> 2.0'
+  # Use sqlite3 as the database for Active Record
+  gem 'sqlite3'
 end
 
 group :development do
@@ -65,11 +67,12 @@ group :development do
   gem 'spring', '< 3.0'
   gem 'spring-watcher-listen', '~> 2.0.1'
 
-  # Use sqlite3 as the database for Active Record
-  gem 'sqlite3', '~> 1.4.2'
+  
 end
 
 group :production do
   # Use pg as the database for Active Record
   # gem 'pg', '~> 1.3.1'
+  gem 'pg', '~> 1.2.3'
+  gem 'bundler', '~> 2.2.3'
 end
