@@ -59,6 +59,7 @@ group :development, :test do
   gem 'rails_admin', '~> 2.0'
   # Use sqlite3 as the database for Active Record
   gem 'sqlite3', '~> 1.4.2'
+  gem 'bundler'
 end
 
 group :development do
@@ -75,5 +76,4 @@ end
 group :production do
   # Use pg as the database for Active Record
   gem 'pg', '~> 1.3.1'
-  gem 'bundler'
 end
