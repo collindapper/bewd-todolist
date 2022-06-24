@@ -56,7 +56,7 @@ group :development, :test do
   gem 'net-smtp', '>= 0.3.1'
   gem 'rails_admin', '~> 2.0'
   # Use sqlite3 as the database for Active Record
-  gem 'sqlite3', '~> 1.4.2'
+  gem 'sqlite3'
   
 end
 
@@ -73,5 +73,5 @@ end
 
 group :production do
   # Use pg as the database for Active Record
-  gem 'pg', '~> 1.3.1'
+  gem 'pg'
 end
