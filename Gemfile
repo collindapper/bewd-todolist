@@ -1,7 +1,7 @@
 source 'https://rubygems.org'
 git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
-ruby '3.1.2'
+ruby '3.0.3'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 6.1.4'
@@ -42,6 +42,9 @@ gem "webrick", "~> 1.7"
 # Reduces boot times through caching; required in config/boot.rb
 gem 'bootsnap', '>= 1.10.3', require: false
 
+# Bundler
+gem 'bundler', '>=1.15.0'
+
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug', '~> 11.1.3', platforms: [:mri, :mingw, :x64_mingw]
@@ -55,8 +58,7 @@ group :development, :test do
   # Added by Collin (Forked)
   gem 'net-smtp', '>= 0.3.1'
   gem 'rails_admin', '~> 2.0'
-  # Use sqlite3 as the database for Active Record
-  gem 'sqlite3'
+  
   
 end
 
@@ -68,10 +70,11 @@ group :development do
   gem 'spring', '< 3.0'
   gem 'spring-watcher-listen', '~> 2.0.1'
   
- 
+  # Use sqlite3 as the database for Active Record
+  gem 'sqlite3', '~> 1.4.2'
 end
 
 group :production do
   # Use pg as the database for Active Record
-  gem 'pg'
+  gem 'pg', '~> 1.3.1'
 end
