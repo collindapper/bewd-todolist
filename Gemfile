@@ -43,7 +43,7 @@ gem "webrick", "~> 1.7"
 gem 'bootsnap', '>= 1.10.3', require: false
 
 # Bundler
-gem 'bundler', '>=1.15.0'
+# gem 'bundler', '>=1.15.0'
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
