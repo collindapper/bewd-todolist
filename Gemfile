@@ -1,7 +1,9 @@
 source 'https://rubygems.org'
 git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
-ruby '3.0.3'
+ruby '3.1.2'
+
+gem 'bundler'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 6.1.4'
@@ -41,8 +43,6 @@ gem "webrick", "~> 1.7"
 
 # Reduces boot times through caching; required in config/boot.rb
 gem 'bootsnap', '>= 1.10.3', require: false
-
-gem 'bundler'
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
