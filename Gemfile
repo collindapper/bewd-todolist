@@ -1,7 +1,7 @@
 source 'https://rubygems.org'
 git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
-ruby '3.0.3'
+ruby '3.1.2'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 6.1.4'
@@ -33,6 +33,8 @@ gem 'aws-sdk-s3', '~> 1.112'
 # Webrick
 gem "webrick", "~> 1.7"
 
+gem 'rails_admin', '~> 2.0'
+
 # Use ActiveStorage variant
 # gem 'mini_magick', '~> 4.8'
 
@@ -57,7 +59,7 @@ group :development, :test do
   gem 'rspec-rails', '~> 4.0'
   # Added by Collin (Forked)
   gem 'net-smtp', '>= 0.3.1'
-  gem 'rails_admin', '~> 2.0'
+  
   
   
 end
